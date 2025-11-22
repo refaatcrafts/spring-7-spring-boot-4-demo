@@ -1,4 +1,12 @@
 package refaatcrafts.io.demo.application.models;
 
-public class CreateDemoResponse {
+import java.time.Instant;
+
+public record CreateDemoResponse(
+        String name,
+        String description,
+        Instant createAt
+) {
 }
+
+
